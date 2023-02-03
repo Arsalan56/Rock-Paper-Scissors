@@ -38,3 +38,12 @@ function play (playerSelection, computerSelection) {
             }
     }
 }
+
+function game () {
+    const playerSelection = prompt('Rock, paper, or scissors?')
+    for (let i = 0; i < 5; i++) {
+    console.log(play(playerSelection, getComputerChoice()))
+    }
+}
+
+game()
