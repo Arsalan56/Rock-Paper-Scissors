@@ -40,8 +40,12 @@ function play (playerSelection, computerSelection) {
 }
 
 function playRound (playerSelection) {
-    
-    console.log(play(playerSelection, getComputerChoice()))
+    const div = document.querySelector('div');
+    const output = document.querySelector('p');
+
+    // const output = document.createElement('p');
+    output.textContent = (play(playerSelection, getComputerChoice()));
+    div.appendChild(output);
 }
 
 let buttons = document.querySelectorAll('button');
