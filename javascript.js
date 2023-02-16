@@ -73,4 +73,3 @@ function playRound (playerSelection) {
 
 let buttons = document.querySelectorAll('button');
 buttons.forEach(btn => btn.addEventListener('click', () => playRound(btn.className)));
-
